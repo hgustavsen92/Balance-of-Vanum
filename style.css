@@ -1,0 +1,148 @@
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: Papyrus, fantasy, serif;
+  text-align: center;
+  padding: 2rem;
+  color: #f5e6c4;
+}
+
+h1 {
+  font-size: 4rem;
+  text-shadow: 0 0 15px #1d1d1d, 0 0 25px #000000;
+}
+
+p {
+  font-size: 1.6rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* ===== Backgrounds ===== */
+body.home {
+  background: url('https://m.media-amazon.com/images/I/61XpNrecAjL._SL1491_.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #cccccc;
+}
+
+body.lore {
+  background: #111;
+}
+
+/* ===== Buttons (shared) ===== */
+.button {
+  display: inline-block;
+  margin-top: 0rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.8rem;
+  background: linear-gradient(135deg, #8a2be2, #4b0082);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #8a2be2;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #d8b4fe;
+}
+
+/* ===== Tab Buttons (for factions) ===== */
+.tab-button {
+  background: #4b0082;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.tab-button:hover {
+  background: #6a0dad;
+  transform: scale(1.05);
+}
+
+/* ===== Faction Content ===== */
+.tab-content {
+  display: none;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+a {
+  color: gold;
+  /* normal link color */
+  text-decoration: none;
+  /* removes underline if you want */
+}
+
+
+.navbar {
+  position: fixed;
+  /* gjør at den alltid "fester seg" */
+  top: 0;
+  /* fester til toppen av siden */
+  left: 0;
+  width: 100%;
+  /* strekker seg hele veien bortover */
+  background: rgba(0, 0, 0, 0.7);
+  /* bakgrunn så teksten ikke blandes med siden */
+  padding: 0.3rem 0;
+  text-align: center;
+  /* sentrer knappene */
+  z-index: 1000;
+  /* sørger for at navbar ligger oppå annet innhold */
+}
+
+
+/* Reviews layout */
+.reviews {
+  max-width: 800px;
+  margin: 1rem auto;
+  display: grid;
+  gap: 1rem;
+}
+
+
+/* Override your global <p> style inside review cards */
+.review {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  width: 600px;      /* fix the width for all review boxes */
+  color: #f5e6c4;
+  box-shadow: 0 0 10px #333;
+  text-align: left;
+}
+
+.review h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: gold;
+}
+
+.review p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
